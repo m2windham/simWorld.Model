@@ -36,8 +36,10 @@ def main() -> None:
     cam_data.ortho_scale = span + 2.2
     cam = bpy.data.objects.new("cam", cam_data)
     bpy.context.collection.objects.link(cam)
-    cam.location = centre + Vector((0, -10, 7))
-    cam.rotation_euler = (math.radians(55), 0, 0)
+    yaw = math.radians(30)  # three-quarter view reads depth; a straight elevation hides gables
+    offset = Vector((10 * math.sin(yaw), -10 * math.cos(yaw), 7))
+    cam.location = centre + offset
+    cam.rotation_euler = (math.radians(55), 0, yaw)
     bpy.context.scene.camera = cam
 
     scene = bpy.context.scene

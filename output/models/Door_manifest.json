@@ -1,19 +1,21 @@
 {
   "asset_name": "Door",
-  "archetype": "modular_wall",
+  "archetype": "door_frame",
   "compute_mode": "HIP_GPU",
   "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\Door.glb",
   "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\Door.fbx",
   "textures": {},
   "palette_faces": {
-    "plank": 4
+    "timber_dark": 30,
+    "plank": 6,
+    "iron": 6
   },
   "diagnostic_renders": {},
   "dimensions": [
     1.0,
-    0.15,
+    0.2,
     1.0
   ],
-  "vertex_count": 8,
-  "polygon_count": 4
+  "vertex_count": 56,
+  "polygon_count": 42
 }

@@ -78,8 +78,8 @@ EXTRAS = [
     ("modular_wall", "WallGranite", 1.0, 0.2, 1.0, 602, 400),
     ("modular_wall", "WallLimestone", 1.0, 0.2, 1.0, 603, 400),
     ("modular_wall", "WallSandstone", 1.0, 0.2, 1.0, 604, 400),
-    ("modular_wall", "Door", 1.0, 0.15, 1.0, 611, 400),
-    ("prop_crate", "StorageHut", 1.0, 1.0, 1.0, 701, 400),
+    ("door_frame", "Door", 1.0, 0.2, 1.0, 611, 400),
+    ("storage_hut", "StorageHut", 1.0, 1.0, 1.0, 701, 400),
     ("blueprint_outline", "Blueprint_Bed_a", 0.9, 1.8, 0.33, 402, 400),  # bed_simple 1x2 extents
     ("bed_frame", "Frame_Bed_a", 1.0, 2.0, 0.4, 403, 400),
 ]

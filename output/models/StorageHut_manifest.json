@@ -1,13 +1,14 @@
 {
   "asset_name": "StorageHut",
-  "archetype": "prop_crate",
+  "archetype": "storage_hut",
   "compute_mode": "HIP_GPU",
   "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\StorageHut.glb",
   "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\StorageHut.fbx",
   "textures": {},
   "palette_faces": {
-    "plank": 5,
-    "thatch": 1
+    "plank": 11,
+    "thatch": 18,
+    "timber_dark": 31
   },
   "diagnostic_renders": {},
   "dimensions": [
@@ -15,6 +16,6 @@
     1.0,
     1.0
   ],
-  "vertex_count": 8,
-  "polygon_count": 6
+  "vertex_count": 80,
+  "polygon_count": 60
 }
