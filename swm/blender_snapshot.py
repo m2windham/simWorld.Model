@@ -43,7 +43,7 @@ def main() -> None:
     scene = bpy.context.scene
     scene.render.engine = "BLENDER_WORKBENCH"
     scene.display.shading.light = "STUDIO"
-    scene.display.shading.color_type = "MATERIAL"
+    scene.display.shading.color_type = "TEXTURE"  # palette atlas, not the flat material colour
     scene.render.resolution_x = int(220 * (span + 2.2))
     scene.render.resolution_y = 480
     scene.render.filepath = str(out_dir / f"{def_name}.snapshot.png")

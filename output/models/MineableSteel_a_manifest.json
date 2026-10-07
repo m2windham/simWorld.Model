@@ -6,9 +6,9 @@
   "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\MineableSteel_a.fbx",
   "textures": {},
   "palette_faces": {
-    "ore_rock": 91,
-    "ore_steel": 32,
-    "moss": 5
+    "ore_rock": 93,
+    "ore_steel": 29,
+    "moss": 6
   },
   "diagnostic_renders": {},
   "dimensions": [

@@ -37,7 +37,12 @@ def main() -> None:
     if shades > cols:
         raise ValueError("shades must fit in one row")
     swatches = spec["swatch"]
-    rows = len(swatches)
+    rows = int(spec["atlas"].get("rows", len(swatches)))
+    if len(swatches) > rows:
+        raise ValueError(
+            f"{len(swatches)} swatches do not fit in {rows} rows; "
+            "raise atlas.rows and regenerate everything"
+        )
     width, height = cols * cell, rows * cell
     img = Image.new("RGB", (width, height), (255, 0, 255))
     index: dict[str, dict] = {}

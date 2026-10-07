@@ -13,6 +13,7 @@
 cell_px = 16
 cols = 8
 shades = 5
+rows = 32   # fixed height (512 px) so adding a swatch never moves existing cells
 
 [registers]
 land = { spread = 0.10 }
