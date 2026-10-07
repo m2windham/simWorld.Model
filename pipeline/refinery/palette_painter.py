@@ -101,7 +101,7 @@ NAME_ROLES = {
     "WoodLog": "bark",
     "Bow": "plank",
     "Mineable": "ore_rock",
-    "Wall": "stone_wall",
+    "Wall": "plank",  # the core's generic Wall costs WoodLog: a wooden wall, not stone
     "WallGranite": "granite",
     "WallLimestone": "limestone",
     "WallSandstone": "sandstone",
@@ -173,7 +173,7 @@ def _base_role(obj: bpy.types.Object, face, asset_name: str, archetype: str) -> 
     # Walls are named for their stone (WallGranite...), and that beats the generator's stone slot;
     # only their dark trim slot survives. Everything else trusts the generator's slot first.
     if asset_name.startswith("Wall"):
-        return role if role == "timber_dark" else (_name_role(asset_name) or "stone_wall")
+        return role if role == "timber_dark" else (_name_role(asset_name) or "plank")
     if role:
         return role
     if archetype in ("wild_plant", "plant_berry", "tree_poplar"):

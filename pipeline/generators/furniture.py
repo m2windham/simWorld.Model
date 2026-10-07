@@ -55,9 +55,9 @@ class BedSimpleGenerator:
         ret = bmesh.ops.create_cube(bm2, size=1.0)
         for v in ret["verts"]:
             v.co.x *= self.width * 0.7
-            v.co.y *= self.depth * 0.25
+            v.co.y *= self.depth * 0.14  # a pillow, not a bolster
             v.co.z = v.co.z * 0.08 + 0.29
-            v.co.y += self.depth * 0.25
+            v.co.y += self.depth * 0.38
 
         bmesh.ops.recalc_face_normals(bm2, faces=bm2.faces[:])
         bm2.to_mesh(mesh)
