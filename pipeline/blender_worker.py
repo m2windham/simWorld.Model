@@ -121,6 +121,7 @@ def main():
         "bed_frame",
         "door_frame",
         "storage_hut",
+        "cell_wall",
     ]
     _bevel_segments = 0 if args.archetype in no_bevel_archetypes else 2
     NormalProcessor.process(

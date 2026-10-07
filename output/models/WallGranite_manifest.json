@@ -1,19 +1,20 @@
 {
   "asset_name": "WallGranite",
-  "archetype": "modular_wall",
+  "archetype": "cell_wall",
   "compute_mode": "HIP_GPU",
   "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\WallGranite.glb",
   "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\WallGranite.fbx",
   "textures": {},
   "palette_faces": {
-    "granite": 4
+    "granite": 12,
+    "timber_dark": 6
   },
   "diagnostic_renders": {},
   "dimensions": [
     1.0,
-    0.2,
+    1.0,
     1.0
   ],
-  "vertex_count": 8,
-  "polygon_count": 4
+  "vertex_count": 24,
+  "polygon_count": 18
 }

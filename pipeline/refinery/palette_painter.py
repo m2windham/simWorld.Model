@@ -161,13 +161,13 @@ def _name_role(asset_name: str) -> str | None:
 
 
 def _base_role(obj: bpy.types.Object, face, asset_name: str, archetype: str) -> str:
-    # Walls are named for their stone (WallGranite...), and that beats the modular generator's
-    # generic slot names; everything else trusts the generator's slot first.
-    if asset_name.startswith("Wall"):
-        return _name_role(asset_name) or "stone_wall"
     slots = obj.data.materials
     slot = slots[face.material_index] if face.material_index < len(slots) else None
     role = _slot_role(slot.name if slot else None)
+    # Walls are named for their stone (WallGranite...), and that beats the generator's stone slot;
+    # only their dark trim slot survives. Everything else trusts the generator's slot first.
+    if asset_name.startswith("Wall"):
+        return role if role == "timber_dark" else (_name_role(asset_name) or "stone_wall")
     if role:
         return role
     if archetype in ("wild_plant", "plant_berry", "tree_poplar"):

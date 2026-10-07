@@ -1,0 +1,24 @@
+{
+  "output\\models\\Wall.fbx": {
+    "vertices": 24,
+    "faces": 18,
+    "extents": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "volume": 0.9556,
+    "hash": "0f0fc7dd7016"
+  },
+  "output\\models\\WallGranite.fbx": {
+    "vertices": 24,
+    "faces": 18,
+    "extents": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "volume": 0.9556,
+    "hash": "0f0fc7dd7016"
+  }
+}

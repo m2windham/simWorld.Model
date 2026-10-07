@@ -74,10 +74,10 @@ EXTRAS = [
         ("plant_berry", f"Plant_Berry_{v}", 0.6, 0.6, 0.5, 21 + i, 400)
         for i, v in enumerate("abcd")
     ],
-    ("modular_wall", "Wall", 1.0, 0.2, 1.0, 601, 400),
-    ("modular_wall", "WallGranite", 1.0, 0.2, 1.0, 602, 400),
-    ("modular_wall", "WallLimestone", 1.0, 0.2, 1.0, 603, 400),
-    ("modular_wall", "WallSandstone", 1.0, 0.2, 1.0, 604, 400),
+    ("cell_wall", "Wall", 1.0, 1.0, 1.0, 601, 400),
+    ("cell_wall", "WallGranite", 1.0, 1.0, 1.0, 602, 400),
+    ("cell_wall", "WallLimestone", 1.0, 1.0, 1.0, 603, 400),
+    ("cell_wall", "WallSandstone", 1.0, 1.0, 1.0, 604, 400),
     ("door_frame", "Door", 1.0, 0.2, 1.0, 611, 400),
     ("storage_hut", "StorageHut", 1.0, 1.0, 1.0, 701, 400),
     ("blueprint_outline", "Blueprint_Bed_a", 0.9, 1.8, 0.33, 402, 400),  # bed_simple 1x2 extents
