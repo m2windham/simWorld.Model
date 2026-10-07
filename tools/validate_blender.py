@@ -82,6 +82,7 @@ EXTRAS = [
     ("storage_hut", "StorageHut", 1.0, 1.0, 1.0, 701, 400),
     ("blueprint_outline", "Blueprint_Bed_a", 0.9, 1.8, 0.33, 402, 400),  # bed_simple 1x2 extents
     ("bed_frame", "Frame_Bed_a", 1.0, 2.0, 0.4, 403, 400),
+    *[("human", f"Human_{v}", 1.0, 1.0, 0.9, 801 + i, 300) for i, v in enumerate("abcd")],
 ]
 
 

@@ -78,6 +78,12 @@ SLOT_ROLES = {
     "stick": "plank",
     "turf": "moss",
     "blueprint": "blueprint",
+    # pawns
+    "skin": "skin",
+    "tunic": "tunic",
+    "trim": "timber_dark",
+    "hair": "hair",
+    "headgear": "headgear",
 }
 
 # asset-name prefix -> swatch

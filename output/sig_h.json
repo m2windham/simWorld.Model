@@ -1,0 +1,24 @@
+{
+  "output\\models\\Human_a.fbx": {
+    "vertices": 104,
+    "faces": 78,
+    "extents": [
+      0.504,
+      0.26,
+      0.87
+    ],
+    "volume": 0.0488,
+    "hash": "bdf60bf4bec9"
+  },
+  "output\\models\\Human_b.fbx": {
+    "vertices": 104,
+    "faces": 78,
+    "extents": [
+      0.562,
+      0.29,
+      0.875
+    ],
+    "volume": 0.0714,
+    "hash": "0b7c1e01feae"
+  }
+}

@@ -37,17 +37,20 @@ def main() -> None:
     if shades > cols:
         raise ValueError("shades must fit in one row")
     swatches = spec["swatch"]
-    rows = int(spec["atlas"].get("rows", len(swatches)))
-    if len(swatches) > rows:
+    # Terrain swatches are JSON-only (atlas = false): the host paints ground from host.json, and
+    # keeping them out of the atlas means existing mesh UVs never move when terrain is tuned.
+    atlas_swatches = {n: s for n, s in swatches.items() if s.get("atlas", True)}
+    rows = int(spec["atlas"].get("rows", len(atlas_swatches)))
+    if len(atlas_swatches) > rows:
         raise ValueError(
-            f"{len(swatches)} swatches do not fit in {rows} rows; "
+            f"{len(atlas_swatches)} atlas swatches do not fit in {rows} rows; "
             "raise atlas.rows and regenerate everything"
         )
     width, height = cols * cell, rows * cell
     img = Image.new("RGB", (width, height), (255, 0, 255))
     index: dict[str, dict] = {}
 
-    for row, (name, sw) in enumerate(swatches.items()):
+    for row, (name, sw) in enumerate(atlas_swatches.items()):
         register = sw["register"]
         spread = spec["registers"][register]["spread"]
         base = hex_rgb(sw["rgb"])
@@ -67,7 +70,23 @@ def main() -> None:
     (PALETTE / "palette.json").write_text(
         json.dumps({"size": [width, height], "cell_px": cell, "swatches": index}, indent=2)
     )
-    print(f"palette.png {width}x{height}, {rows} swatches x {shades} shades")
+    # The host's copy (delivered as Assets/Art/Palette/palette.json): every swatch's base colour
+    # as hex, plus the core terrain defName -> swatch map, so no colour lives in host code.
+    terrain = spec.get("terrain", {})
+    missing = sorted(set(terrain.values()) - set(swatches))
+    if missing:
+        raise ValueError(f"[terrain] names swatches that do not exist: {missing}")
+    host = {
+        "version": 1,
+        "swatches": {name: sw["rgb"].upper() for name, sw in swatches.items()},
+        "registers": {name: sw["register"] for name, sw in swatches.items()},
+        "terrain": terrain,
+    }
+    (PALETTE / "host.json").write_text(json.dumps(host, indent=2))
+    print(
+        f"palette.png {width}x{height}, {len(atlas_swatches)} atlas swatches x {shades} shades; "
+        f"host.json {len(swatches)} swatches, {len(terrain)} terrain defNames"
+    )
 
 
 if __name__ == "__main__":

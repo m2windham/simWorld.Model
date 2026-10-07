@@ -91,6 +91,9 @@ def main():
         "height": args.height,
         "thickness": args.thickness,
         "seed": args.seed,
+        # The Host's variant suffix (Human_a -> "a") for generators that key silhouettes on it;
+        # generators that do not take it ignore it through **kwargs.
+        "variant": args.name.rsplit("_", 1)[-1] if "_" in args.name else "a",
     }
 
     try:
@@ -122,6 +125,7 @@ def main():
         "door_frame",
         "storage_hut",
         "cell_wall",
+        "human",
     ]
     _bevel_segments = 0 if args.archetype in no_bevel_archetypes else 2
     NormalProcessor.process(

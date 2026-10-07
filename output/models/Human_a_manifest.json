@@ -1,0 +1,22 @@
+{
+  "asset_name": "Human_a",
+  "archetype": "human",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\Human_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\Human_a.fbx",
+  "textures": {},
+  "palette_faces": {
+    "tunic": 30,
+    "timber_dark": 18,
+    "skin": 24,
+    "hair": 6
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    1.0,
+    1.0,
+    0.9
+  ],
+  "vertex_count": 104,
+  "polygon_count": 78
+}

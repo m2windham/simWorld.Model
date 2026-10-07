@@ -133,3 +133,102 @@ rgb = "#B87333"
 [swatch.blueprint]
 register = "settlement"
 rgb = "#5A8FB5"
+
+# Settlers. A cool tunic against the warm land so people read at a glance; dark trim shared.
+[swatch.skin]
+register = "settlement"
+rgb = "#C9A27E"
+
+[swatch.tunic]
+register = "settlement"
+rgb = "#4F6E8C"
+
+[swatch.hair]
+register = "settlement"
+rgb = "#4A3524"
+
+[swatch.headgear]
+register = "settlement"
+rgb = "#8A5A3C"
+
+# ---- terrain (JSON only: the host paints ground and fallback cubes from palette.json, so these
+# ---- take no atlas cells and existing mesh UVs never move) --------------------------------
+[swatch.terrain_soil]
+register = "land"
+atlas = false
+rgb = "#8C8655"
+
+[swatch.terrain_soil_rich]
+register = "land"
+atlas = false
+rgb = "#73804A"
+
+[swatch.terrain_sand]
+register = "land"
+atlas = false
+rgb = "#D5C08E"
+
+[swatch.terrain_gravel]
+register = "land"
+atlas = false
+rgb = "#A39B88"
+
+[swatch.terrain_mud]
+register = "land"
+atlas = false
+rgb = "#6E5A3F"
+
+[swatch.terrain_marsh]
+register = "land"
+atlas = false
+rgb = "#5F7A55"
+
+[swatch.terrain_ice]
+register = "land"
+atlas = false
+rgb = "#D9E2E6"
+
+[swatch.water_shallow]
+register = "land"
+atlas = false
+rgb = "#5F8FA0"
+
+[swatch.water_deep]
+register = "land"
+atlas = false
+rgb = "#3E6B80"
+
+[swatch.street_dirt]
+register = "settlement"
+atlas = false
+rgb = "#A08860"
+
+[swatch.street_stone]
+register = "settlement"
+atlas = false
+rgb = "#8F8A80"
+
+[swatch.street_asphalt]
+register = "settlement"
+atlas = false
+rgb = "#4A4A4C"
+
+# Core TerrainDef defName -> swatch. Read by the host from palette.json; every TerrainDef in the
+# core's XML as of 2026-10-07 is listed so no terrain falls back to a hashed colour.
+[terrain]
+Soil = "terrain_soil"
+SoilRich = "terrain_soil_rich"
+Sand = "terrain_sand"
+Gravel = "terrain_gravel"
+Mud = "terrain_mud"
+Marsh = "terrain_marsh"
+MarshyTerrain = "terrain_marsh"
+Ice = "terrain_ice"
+WaterShallow = "water_shallow"
+WaterDeep = "water_deep"
+WaterMovingShallow = "water_shallow"
+WaterMovingChestDeep = "water_deep"
+StreetDirtPath = "street_dirt"
+StreetDirtRoad = "street_dirt"
+StreetStoneRoad = "street_stone"
+StreetAncientAsphalt = "street_asphalt"

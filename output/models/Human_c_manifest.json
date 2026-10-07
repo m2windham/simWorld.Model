@@ -1,0 +1,22 @@
+{
+  "asset_name": "Human_c",
+  "archetype": "human",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\Human_c.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\Human_c.fbx",
+  "textures": {},
+  "palette_faces": {
+    "tunic": 30,
+    "timber_dark": 18,
+    "skin": 24,
+    "headgear": 12
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    1.0,
+    1.0,
+    0.9
+  ],
+  "vertex_count": 112,
+  "polygon_count": 84
+}

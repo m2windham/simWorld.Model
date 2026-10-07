@@ -13,4 +13,4 @@ from . import (
 from .generator_registry import GeneratorRegistry
 
 __all__ = ["GeneratorRegistry"]
-from . import cell_wall, construction_stages, settlement_props
+from . import cell_wall, construction_stages, pawns, settlement_props

@@ -93,6 +93,15 @@ def main() -> None:
             elif not opts.no_deliver:
                 subprocess.run(["uv", "run", "swm", "deliver", family], cwd=ROOT)
 
+    if not opts.no_deliver:
+        # The palette travels with every drop: the atlas the meshes were built against, and the
+        # host's hex/terrain map, so a swatch change and the models land in the same commit.
+        art = HOST_MODELS.parent.parent / "Art" / "Palette"
+        art.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(ROOT / "palette" / "palette.png", art / "Palette.png")
+        shutil.copy2(ROOT / "palette" / "host.json", art / "palette.json")
+        print(f"  palette -> {art}")
+
     print(f"\n{len(jobs)} assets, {len(failed)} failed: {failed}")
     sys.exit(1 if failed else 0)
 
