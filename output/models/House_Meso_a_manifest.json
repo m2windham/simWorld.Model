@@ -1,0 +1,22 @@
+{
+  "asset_name": "House_Meso_a",
+  "archetype": "meso_home_a",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\House_Meso_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\House_Meso_a.fbx",
+  "textures": {},
+  "palette_faces": {
+    "timber_dark": 120,
+    "wattle": 30,
+    "thatch": 10,
+    "bark": 6
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    4.0,
+    5.0,
+    3.5
+  ],
+  "vertex_count": 220,
+  "polygon_count": 166
+}

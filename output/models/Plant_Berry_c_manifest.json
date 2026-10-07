@@ -1,0 +1,21 @@
+{
+  "asset_name": "Plant_Berry_c",
+  "archetype": "plant_berry",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\Plant_Berry_c.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\Plant_Berry_c.fbx",
+  "textures": {},
+  "palette_faces": {
+    "bark": 18,
+    "leaf": 195,
+    "berry": 25
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.6,
+    0.6,
+    0.5
+  ],
+  "vertex_count": 146,
+  "polygon_count": 238
+}

@@ -58,6 +58,38 @@ class Job:
     seed: int
     budget: int
     reference: Path | None
+    thickness: float = 0.2  # modular_* only
+
+
+# Shipped models the batch scripts never covered (built by hand-run commands on 2026-09-20; their
+# seeds were not recorded, so these regenerate with new seeds under the same archetype and size).
+EXTRAS = [
+    *[("natural_rock", f"Granite_{v}", 1.0, 1.0, 1.0, 101 + i, 400) for i, v in enumerate("abcd")],
+    *[
+        ("natural_rock", f"Sandstone_{v}", 1.0, 1.0, 1.0, 121 + i, 400)
+        for i, v in enumerate("abcd")
+    ],
+    *[("wild_plant", f"WildPlant_{v}", 0.6, 0.6, 0.5, 11 + i, 400) for i, v in enumerate("abcd")],
+    *[
+        ("plant_berry", f"Plant_Berry_{v}", 0.6, 0.6, 0.5, 21 + i, 400)
+        for i, v in enumerate("abcd")
+    ],
+    ("modular_wall", "Wall", 1.0, 0.2, 1.0, 601, 400),
+    ("modular_wall", "WallGranite", 1.0, 0.2, 1.0, 602, 400),
+    ("modular_wall", "WallLimestone", 1.0, 0.2, 1.0, 603, 400),
+    ("modular_wall", "WallSandstone", 1.0, 0.2, 1.0, 604, 400),
+    ("modular_wall", "Door", 1.0, 0.15, 1.0, 611, 400),
+    ("prop_crate", "StorageHut", 1.0, 1.0, 1.0, 701, 400),
+    ("bed_simple", "Blueprint_Bed_a", 1.0, 1.0, 0.4, 402, 400),
+    ("bed_simple", "Frame_Bed_a", 1.0, 1.0, 0.4, 403, 400),
+]
+
+
+def jobs_from_extras() -> list[Job]:
+    return [
+        Job(a, n, w, d, h, s, b, HOST_MODELS / f"{n}.fbx", thickness=d)
+        for a, n, w, d, h, s, b in EXTRAS
+    ]
 
 
 def jobs_from_batches() -> list[Job]:

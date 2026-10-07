@@ -1,13 +1,13 @@
 {
-  "asset_name": "Granite_a",
+  "asset_name": "Granite_d",
   "archetype": "natural_rock",
   "compute_mode": "HIP_GPU",
-  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\Granite_a.glb",
-  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\Granite_a.fbx",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\Granite_d.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\Granite_d.fbx",
   "textures": {},
   "palette_faces": {
-    "granite": 91,
-    "moss": 5
+    "granite": 95,
+    "moss": 1
   },
   "diagnostic_renders": {},
   "dimensions": [

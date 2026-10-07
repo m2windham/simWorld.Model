@@ -2,12 +2,14 @@
   "asset_name": "House_Paleo_a",
   "archetype": "paleo_home_a",
   "compute_mode": "HIP_GPU",
-  "glb_path": "output\\models\\House_Paleo_a.glb",
-  "fbx_path": "output\\models\\House_Paleo_a.fbx",
-  "textures": {
-    "orm": "output\\models\\textures\\House_Paleo_a_ORM.png",
-    "normal_gl": "output\\models\\textures\\House_Paleo_a_Normal_GL.png",
-    "normal_dx": "output\\models\\textures\\House_Paleo_a_Normal_DX.png"
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\House_Paleo_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\House_Paleo_a.fbx",
+  "textures": {},
+  "palette_faces": {
+    "hide": 80,
+    "plaster": 280,
+    "wattle": 64,
+    "stone_wall": 48
   },
   "diagnostic_renders": {},
   "dimensions": [
@@ -15,6 +17,6 @@
     5.0,
     3.8
   ],
-  "vertex_count": 745,
-  "polygon_count": 579
+  "vertex_count": 608,
+  "polygon_count": 472
 }

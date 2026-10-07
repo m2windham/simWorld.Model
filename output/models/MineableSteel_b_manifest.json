@@ -1,0 +1,21 @@
+{
+  "asset_name": "MineableSteel_b",
+  "archetype": "mineable_steel",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\MineableSteel_b.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\MineableSteel_b.fbx",
+  "textures": {},
+  "palette_faces": {
+    "ore_steel": 28,
+    "ore_rock": 93,
+    "moss": 7
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.8,
+    0.8,
+    0.55
+  ],
+  "vertex_count": 64,
+  "polygon_count": 128
+}

@@ -95,6 +95,9 @@ NAME_ROLES = {
     "Bow": "plank",
     "Mineable": "ore_rock",
     "Wall": "stone_wall",
+    "WallGranite": "granite",
+    "WallLimestone": "limestone",
+    "WallSandstone": "sandstone",
     "Door": "plank",
     "StorageHut": "plank",
     "Bed": "plank",
@@ -155,6 +158,10 @@ def _name_role(asset_name: str) -> str | None:
 
 
 def _base_role(obj: bpy.types.Object, face, asset_name: str, archetype: str) -> str:
+    # Walls are named for their stone (WallGranite...), and that beats the modular generator's
+    # generic slot names; everything else trusts the generator's slot first.
+    if asset_name.startswith("Wall"):
+        return _name_role(asset_name) or "stone_wall"
     slots = obj.data.materials
     slot = slots[face.material_index] if face.material_index < len(slots) else None
     role = _slot_role(slot.name if slot else None)

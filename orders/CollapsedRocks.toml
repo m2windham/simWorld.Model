@@ -16,5 +16,6 @@ shading = "flat"
 notes = "Loose pile of 4-7 angular boulders, a few resting on top of others. Reads as rubble next to Granite/Sandstone at ViewSize 60."
 
 [material]
-base_color = [0.46, 0.43, 0.39, 1.0]
-roughness = 0.9
+# Colour comes from palette/palette.toml via the painter's name rules (CollapsedRocks -> granite,
+# moss on upward faces). `archetype` only selects the painter's accent rules.
+archetype = "natural_rock"

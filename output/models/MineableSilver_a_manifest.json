@@ -1,0 +1,21 @@
+{
+  "asset_name": "MineableSilver_a",
+  "archetype": "mineable_silver",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\MineableSilver_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\MineableSilver_a.fbx",
+  "textures": {},
+  "palette_faces": {
+    "ore_rock": 98,
+    "ore_silver": 39,
+    "moss": 1
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.8,
+    0.8,
+    0.6
+  ],
+  "vertex_count": 68,
+  "polygon_count": 138
+}

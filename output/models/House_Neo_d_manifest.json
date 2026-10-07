@@ -1,0 +1,21 @@
+{
+  "asset_name": "House_Neo_d",
+  "archetype": "neo_home_d",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\House_Neo_d.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\House_Neo_d.fbx",
+  "textures": {},
+  "palette_faces": {
+    "daub": 60,
+    "timber_dark": 18,
+    "thatch": 5
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    4.0,
+    5.0,
+    3.7
+  ],
+  "vertex_count": 110,
+  "polygon_count": 83
+}

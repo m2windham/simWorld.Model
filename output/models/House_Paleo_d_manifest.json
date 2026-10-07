@@ -1,0 +1,21 @@
+{
+  "asset_name": "House_Paleo_d",
+  "archetype": "paleo_home_d",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\House_Paleo_d.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\House_Paleo_d.fbx",
+  "textures": {},
+  "palette_faces": {
+    "daub": 18,
+    "hide": 6,
+    "timber_dark": 24
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    4.0,
+    5.0,
+    3.4
+  ],
+  "vertex_count": 64,
+  "polygon_count": 48
+}

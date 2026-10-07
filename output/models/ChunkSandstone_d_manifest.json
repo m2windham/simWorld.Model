@@ -1,0 +1,20 @@
+{
+  "asset_name": "ChunkSandstone_d",
+  "archetype": "chunk_sandstone",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\ChunkSandstone_d.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\ChunkSandstone_d.fbx",
+  "textures": {},
+  "palette_faces": {
+    "sandstone": 238,
+    "moss": 21
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.5,
+    0.5,
+    0.3
+  ],
+  "vertex_count": 121,
+  "polygon_count": 259
+}

@@ -1,0 +1,19 @@
+{
+  "asset_name": "Bow_Short_b",
+  "archetype": "bow_short",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\Bow_Short_b.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\Bow_Short_b.fbx",
+  "textures": {},
+  "palette_faces": {
+    "plank": 38
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.1,
+    0.05,
+    0.9
+  ],
+  "vertex_count": 32,
+  "polygon_count": 38
+}

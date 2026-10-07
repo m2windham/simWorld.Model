@@ -1,0 +1,20 @@
+{
+  "asset_name": "ChunkLimestone_b",
+  "archetype": "chunk_limestone",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\ChunkLimestone_b.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\ChunkLimestone_b.fbx",
+  "textures": {},
+  "palette_faces": {
+    "limestone": 252,
+    "moss": 12
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.5,
+    0.5,
+    0.35
+  ],
+  "vertex_count": 142,
+  "polygon_count": 264
+}

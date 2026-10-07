@@ -1,0 +1,19 @@
+{
+  "asset_name": "Frame_Bed_a",
+  "archetype": "bed_simple",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\Frame_Bed_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\Frame_Bed_a.fbx",
+  "textures": {},
+  "palette_faces": {
+    "plank": 18
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    1.0,
+    1.0,
+    0.4
+  ],
+  "vertex_count": 24,
+  "polygon_count": 18
+}

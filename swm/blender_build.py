@@ -18,6 +18,7 @@ import bpy
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
+from pipeline.refinery import palette_painter  # noqa: E402
 from swm.budgets import COLLISION_TRIANGLES  # noqa: E402
 from swm.order import Order, load_order  # noqa: E402
 
@@ -71,13 +72,10 @@ def set_shading(obj: bpy.types.Object, shading: str) -> None:
         p.use_smooth = smooth
 
 
-def assign_material(obj: bpy.types.Object, order: Order, name: str) -> None:
-    mat = bpy.data.materials.new(f"M_{name}_PBR")
-    mat.use_nodes = True
-    bsdf = mat.node_tree.nodes["Principled BSDF"]
-    bsdf.inputs["Base Color"].default_value = order.material.get("base_color", (0.6, 0.6, 0.6, 1.0))
-    bsdf.inputs["Roughness"].default_value = float(order.material.get("roughness", 0.8))
-    obj.data.materials.append(mat)
+def assign_material(obj: bpy.types.Object, order: Order, name: str, seed: int) -> dict:
+    """Palette UVs + the shared M_Palette material; the game ignores any other material."""
+    archetype = order.material.get("archetype", "natural_rock")  # drives the painter's accents
+    return palette_painter.paint(obj, name, archetype, seed)
 
 
 def collision_hull(obj: bpy.types.Object, name: str) -> bpy.types.Object:
@@ -130,7 +128,7 @@ def build_variant(order: Order, recipe, index: int, out_dir: Path) -> dict:
     decimate_to(obj, order.budget.triangles - COLLISION_TRIANGLES)
     ground_origin(obj)
     set_shading(obj, order.style.get("shading", "flat"))
-    assign_material(obj, order, name)
+    palette_faces = assign_material(obj, order, name, order.variant_seed(index))
     ucx = collision_hull(obj, name)
 
     fbx = out_dir / f"{name}.fbx"
@@ -142,6 +140,7 @@ def build_variant(order: Order, recipe, index: int, out_dir: Path) -> dict:
         "triangles": triangle_count(obj) + triangle_count(ucx),  # what the Host's tool counts
         "visual_triangles": triangle_count(obj),
         "collision_triangles": triangle_count(ucx),
+        "palette_faces": palette_faces,
         "dimensions": [round(d.x, 3), round(d.y, 3), round(d.z, 3)],
     }
 

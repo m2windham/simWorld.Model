@@ -1,0 +1,20 @@
+{
+  "asset_name": "WildPlant_a",
+  "archetype": "wild_plant",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\WildPlant_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\WildPlant_a.fbx",
+  "textures": {},
+  "palette_faces": {
+    "bark": 18,
+    "leaf": 80
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.6,
+    0.6,
+    0.5
+  ],
+  "vertex_count": 62,
+  "polygon_count": 98
+}

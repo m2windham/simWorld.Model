@@ -1,0 +1,23 @@
+{
+  "asset_name": "House_Chalco_b",
+  "archetype": "chalco_home_b",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\House_Chalco_b.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\House_Chalco_b.fbx",
+  "textures": {},
+  "palette_faces": {
+    "stone_wall": 72,
+    "plaster": 54,
+    "thatch": 21,
+    "daub": 24,
+    "copper": 18
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    4.0,
+    5.0,
+    3.6
+  ],
+  "vertex_count": 238,
+  "polygon_count": 189
+}

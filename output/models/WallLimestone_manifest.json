@@ -1,0 +1,19 @@
+{
+  "asset_name": "WallLimestone",
+  "archetype": "modular_wall",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\WallLimestone.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\WallLimestone.fbx",
+  "textures": {},
+  "palette_faces": {
+    "limestone": 4
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    1.0,
+    0.2,
+    1.0
+  ],
+  "vertex_count": 8,
+  "polygon_count": 4
+}

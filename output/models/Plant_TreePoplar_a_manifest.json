@@ -1,0 +1,21 @@
+{
+  "asset_name": "Plant_TreePoplar_a",
+  "archetype": "tree_poplar",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\Plant_TreePoplar_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\Plant_TreePoplar_a.fbx",
+  "textures": {},
+  "palette_faces": {
+    "bark": 24,
+    "leaf": 127,
+    "leaf_dry": 13
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.8,
+    0.8,
+    3.0
+  ],
+  "vertex_count": 102,
+  "polygon_count": 164
+}

@@ -1,0 +1,20 @@
+{
+  "asset_name": "ChunkGranite_c",
+  "archetype": "chunk_granite",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\ChunkGranite_c.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\ChunkGranite_c.fbx",
+  "textures": {},
+  "palette_faces": {
+    "granite": 213,
+    "moss": 7
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.5,
+    0.5,
+    0.4
+  ],
+  "vertex_count": 142,
+  "polygon_count": 220
+}
