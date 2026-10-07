@@ -117,6 +117,8 @@ def main():
         "plant_berry",
         "ore_deposit",
         "tree_poplar",
+        "blueprint_outline",
+        "bed_frame",
     ]
     _bevel_segments = 0 if args.archetype in no_bevel_archetypes else 2
     NormalProcessor.process(

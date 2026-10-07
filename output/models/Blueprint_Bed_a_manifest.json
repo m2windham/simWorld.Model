@@ -1,19 +1,19 @@
 {
   "asset_name": "Blueprint_Bed_a",
-  "archetype": "bed_simple",
+  "archetype": "blueprint_outline",
   "compute_mode": "HIP_GPU",
   "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\Blueprint_Bed_a.glb",
   "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\Blueprint_Bed_a.fbx",
   "textures": {},
   "palette_faces": {
-    "plank": 18
+    "blueprint": 72
   },
   "diagnostic_renders": {},
   "dimensions": [
-    1.0,
-    1.0,
-    0.4
+    0.9,
+    0.9,
+    0.33
   ],
-  "vertex_count": 24,
-  "polygon_count": 18
+  "vertex_count": 96,
+  "polygon_count": 72
 }

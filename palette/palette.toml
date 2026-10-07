@@ -127,3 +127,8 @@ rgb = "#3C4F5B"
 [swatch.copper]
 register = "settlement"
 rgb = "#B87333"
+
+# Construction stages: a planned thing is drawn as a ghost outline in this blue.
+[swatch.blueprint]
+register = "settlement"
+rgb = "#5A8FB5"

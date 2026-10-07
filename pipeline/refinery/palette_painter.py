@@ -77,6 +77,7 @@ SLOT_ROLES = {
     "rope": "wattle",
     "stick": "plank",
     "turf": "moss",
+    "blueprint": "blueprint",
 }
 
 # asset-name prefix -> swatch
@@ -101,6 +102,8 @@ NAME_ROLES = {
     "Door": "plank",
     "StorageHut": "plank",
     "Bed": "plank",
+    "Blueprint": "blueprint",
+    "Frame": "plank",
     "House": "daub",
     "Plant": "leaf",
     "WildPlant": "leaf",

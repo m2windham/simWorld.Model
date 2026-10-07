@@ -80,8 +80,8 @@ EXTRAS = [
     ("modular_wall", "WallSandstone", 1.0, 0.2, 1.0, 604, 400),
     ("modular_wall", "Door", 1.0, 0.15, 1.0, 611, 400),
     ("prop_crate", "StorageHut", 1.0, 1.0, 1.0, 701, 400),
-    ("bed_simple", "Blueprint_Bed_a", 1.0, 1.0, 0.4, 402, 400),
-    ("bed_simple", "Frame_Bed_a", 1.0, 1.0, 0.4, 403, 400),
+    ("blueprint_outline", "Blueprint_Bed_a", 0.9, 0.9, 0.33, 402, 400),  # bed_simple's extents
+    ("bed_frame", "Frame_Bed_a", 1.0, 1.0, 0.4, 403, 400),
 ]
 
 
