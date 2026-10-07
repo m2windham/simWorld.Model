@@ -1,0 +1,23 @@
+out/
+.venv/
+__pycache__/
+*.blend1
+# Python
+*.py[cod]
+*$py.class
+venv/
+*.egg-info/
+# Blender & Renders
+*.blend2
+output/renders/temp/
+output/cache/
+*.hipfb
+# OS
+Thumbs.db
+.DS_Store
+
+# generated assets and renders (manifests stay tracked)
+output/models/*.fbx
+output/models/*.glb
+output/models/textures/
+output/renders/

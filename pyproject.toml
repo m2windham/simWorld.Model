@@ -1,0 +1,35 @@
+[project]
+name = "simworld-model"
+version = "0.1.0"
+description = "Recipe-driven Blender asset pipeline for simWorld.Host"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.3",
+    "pymeshlab>=2025.7.post1",
+    "trimesh>=5.1.1",
+]
+
+[project.scripts]
+swm = "swm.run:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["swm"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.lint.per-file-ignores]
+# The original pipeline puts sys.path setup before its imports; leave its style alone.
+"run_pipeline.py" = ["E402", "E501"]
+"batch_items_ores.py" = ["E402", "E501"]
+"pipeline/**/*.py" = ["E402", "E501", "F841", "B007", "B905"]
+# side-effect imports: each generator registers itself with GeneratorRegistry on import
+"pipeline/generators/__init__.py" = ["F401"]

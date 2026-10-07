@@ -1,0 +1,20 @@
+# One order = one defName family. The pipeline builds `variants` files named <defName>_a.. from
+# `recipe`, each from its own seed, and gates them against the Host's triangle budget for `family`.
+
+defName = "CollapsedRocks"
+family = "scatter"          # scatter | item | ore | dwelling  -> budget in pipeline/budgets.py
+recipe = "rock_pile"
+variants = 4
+seed = 20261005
+
+[size]
+footprint = 1.0             # one grid cell, like Sandstone_a (1.0 x 1.0 x 1.0)
+height = 0.55               # a collapsed heap, lower than a standing rock
+
+[style]
+shading = "flat"
+notes = "Loose pile of 4-7 angular boulders, a few resting on top of others. Reads as rubble next to Granite/Sandstone at ViewSize 60."
+
+[material]
+base_color = [0.46, 0.43, 0.39, 1.0]
+roughness = 0.9

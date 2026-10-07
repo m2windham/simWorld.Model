@@ -1,0 +1,20 @@
+{
+  "asset_name": "Granite_a",
+  "archetype": "natural_rock",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "A:\\dev\\simWorld.Model\\output\\models\\Granite_a.glb",
+  "fbx_path": "A:\\dev\\simWorld.Model\\output\\models\\Granite_a.fbx",
+  "textures": {
+    "orm": "A:\\dev\\simWorld.Model\\output\\models\\textures\\Granite_a_ORM.png",
+    "normal_gl": "A:\\dev\\simWorld.Model\\output\\models\\textures\\Granite_a_Normal_GL.png",
+    "normal_dx": "A:\\dev\\simWorld.Model\\output\\models\\textures\\Granite_a_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "vertex_count": 98,
+  "polygon_count": 96
+}

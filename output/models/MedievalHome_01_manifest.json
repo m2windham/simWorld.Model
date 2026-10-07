@@ -1,0 +1,26 @@
+{
+  "asset_name": "MedievalHome_01",
+  "archetype": "prop_medieval_home",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "A:\\dev\\simWorld.Model\\output\\models\\MedievalHome_01.glb",
+  "fbx_path": "A:\\dev\\simWorld.Model\\output\\models\\MedievalHome_01.fbx",
+  "textures": {
+    "orm": "A:\\dev\\simWorld.Model\\output\\models\\textures\\MedievalHome_01_ORM.png",
+    "normal_gl": "A:\\dev\\simWorld.Model\\output\\models\\textures\\MedievalHome_01_Normal_GL.png",
+    "normal_dx": "A:\\dev\\simWorld.Model\\output\\models\\textures\\MedievalHome_01_Normal_DX.png"
+  },
+  "diagnostic_renders": {
+    "beauty_045": "A:\\dev\\simWorld.Model\\output\\renders\\MedievalHome_01\\beauty_045.png",
+    "wireframe_clay_045": "A:\\dev\\simWorld.Model\\output\\renders\\MedievalHome_01\\wireframe_clay_045.png",
+    "normal_orientation": "A:\\dev\\simWorld.Model\\output\\renders\\MedievalHome_01\\normal_orientation.png",
+    "uv_checker_045": "A:\\dev\\simWorld.Model\\output\\renders\\MedievalHome_01\\uv_checker_045.png",
+    "ao_cavity_045": "A:\\dev\\simWorld.Model\\output\\renders\\MedievalHome_01\\ao_cavity_045.png"
+  },
+  "dimensions": [
+    4.0,
+    5.0,
+    6.5
+  ],
+  "vertex_count": 826,
+  "polygon_count": 621
+}
