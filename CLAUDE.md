@@ -38,7 +38,7 @@ Blender is `H:\tools\Blender\blender.exe` (5.2 LTS; override with `BLENDER_PATH`
 - File `<defName>_a..d.fbx`, exactly 4 variants; the Host picks a variant by thing id.
 - `defName` must be a `ThingDef` in `SimWorld.Core` or nothing draws it (`Host/tools/check_defnames.py`).
 - One grid cell = 1 unit; origin at footprint centre, mesh resting on z = 0; Sandstone_a is 1×1×1.
-- Each file: visual mesh `<Name>` with material `M_<Name>_PBR`, plus convex collision `UCX_<Name>_01`.
+- Each file: visual mesh `<Name>` with material `M_<Name>_PBR`, plus a collision child `UCX_<Name>_01` (convex) or `UBX_<Name>_01` (box, modular archetypes); the Host strips renderers from any `UCX_/UBX_/USP_/UCP_` child.
 - Budgets (`Host/docs/triangle-budget.md`) count **visual + UCX together**: scatter 400 (sourced, fails), item 400, ore 1200, dwelling 2500 (proposed). New scatter families also need a prefix entry in `Host/tools/measure_triangles.py` `BUDGETS`.
 - `check_defnames.py` currently exits 1 because of the four parked `House_*` families; that is a known, accepted state.
 
