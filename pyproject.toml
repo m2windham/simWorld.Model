@@ -5,6 +5,7 @@ description = "Recipe-driven Blender asset pipeline for simWorld.Host"
 requires-python = ">=3.12"
 dependencies = [
     "numpy>=2.5.3",
+    "pillow>=12.3.0",
     "pymeshlab>=2025.7.post1",
     "trimesh>=5.1.1",
 ]

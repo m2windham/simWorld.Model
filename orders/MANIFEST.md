@@ -1,9 +1,27 @@
 # simWorld Asset Manifest & Order Switchboard
 
-> **Target Consumer**: [`m2windham/simWorld.Host`](file:///a:/dev/simWorld.Host) (`Assets/Resources/Models/`)  
-> **Target Producer**: [`m2windham/simWorld.Model`](file:///a:/dev/simWorld.Model)  
-> **Aesthetic Standard**: Timberborn-inspired stylized realism (warm wood, chunky legible silhouettes, soft lighting, metric grid).  
-> **Last Updated**: 2026-09-20  
+> **Target Consumer**: [`m2windham/simWorld.Host`](https://github.com/m2windham/simWorld.Host) (`Assets/Resources/Models/`)  
+> **Target Producer**: [`m2windham/simWorld.Model`](https://github.com/m2windham/simWorld.Model)  
+> **Aesthetic Standard**: see "Style: two registers" below (decided 2026-10-06; supersedes the earlier Timberborn-inspired stylized realism).  
+> **Last Updated**: 2026-10-06  
+
+## Style: two registers (decided 2026-10-06)
+
+Our own look, Whiskerwood-adjacent in spirit: a soft hand-made land with a settlement that sits
+*on* it as crisp, deliberate objects. Identity comes from this contrast and the palette, not from
+surface rendering; there is no painterly texture detail.
+
+- **Land** (rocks, flora, chunks, ores, terrain): warm earth palette (ochre, sand, warm greys, dusty
+  greens); low contrast between neighbouring materials; softer, rounder silhouettes; subtle
+  per-facet value noise so planes do not read as plastic. Nothing on the land has a hard outline.
+- **Settlement** (walls, beds, huts, tools, buildings): abrupt by design: a narrower, more saturated
+  palette with dark trim/accent (beam, thatch edge, iron); hard edges and angular massing; higher
+  value contrast against the ground. Built things are the only things with sharp corners and dark
+  lines, so the eye finds the settlement instantly at ViewSize 60.
+- **Mood**: fixed soft daylight (the Host's hour-14 baseline). A day/night cycle only if assets
+  still read in both registers.
+- **Known constraint**: Unity imports each FBX as base colour only; baked PBR textures never reach
+  the game. Colour must therefore travel inside the mesh (see the colour-pipeline decision).
 
 ---
 

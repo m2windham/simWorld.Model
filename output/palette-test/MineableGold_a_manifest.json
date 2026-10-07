@@ -1,0 +1,20 @@
+{
+  "asset_name": "MineableGold_a",
+  "archetype": "mineable_gold",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\palette-test\\MineableGold_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\palette-test\\MineableGold_a.fbx",
+  "textures": {},
+  "palette_faces": {
+    "ore_rock": 105,
+    "ore_gold": 43
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.8,
+    0.8,
+    0.6
+  ],
+  "vertex_count": 72,
+  "polygon_count": 148
+}

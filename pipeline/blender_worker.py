@@ -24,6 +24,7 @@ from pipeline.exporters.production_exporter import (
 from pipeline.generators.generator_registry import GeneratorRegistry
 from pipeline.hardware import configure_cycles_hardware_acceleration
 from pipeline.qa.turntable_studio import TurntableStudio
+from pipeline.refinery import palette_painter as PalettePainter
 from pipeline.refinery.collision_generator import CollisionGenerator
 from pipeline.refinery.normal_processor import NormalProcessor
 from pipeline.refinery.pbr_baker import PBRBaker
@@ -61,6 +62,11 @@ def main():
         help="Output render directory",
     )
     parser.add_argument("--skip_renders", action="store_true", help="Skip turntable rendering")
+    parser.add_argument(
+        "--pbr",
+        action="store_true",
+        help="Legacy path: procedural PBR material + baked ORM/normal textures instead of the palette",
+    )
     parser.add_argument(
         "--enable_draco", action="store_true", help="Enable Draco compression on glTF"
     )
@@ -138,11 +144,18 @@ def main():
     else:
         col_obj = CollisionGenerator.generate_convex_hull(asset_obj, suffix="01")
 
-    # 7. Production Refinery: Procedural PBR Material & Packed Textures
-    if not asset_obj.data.materials:
-        PBRBaker.apply_procedural_pbr_material(asset_obj, mat_name=f"M_{args.name}_PBR")
-    tex_dir = Path(args.out_dir) / "textures"
-    texture_paths = PBRBaker.generate_orm_and_normal_textures(str(tex_dir), args.name)
+    # 7. Colour. Default: palette UVs + the single M_Palette material (the game never sees baked
+    # textures; see orders/MANIFEST.md "Style"). --pbr keeps the original bake for comparison.
+    texture_paths = {}
+    palette_faces = {}
+    if args.pbr:
+        if not asset_obj.data.materials:
+            PBRBaker.apply_procedural_pbr_material(asset_obj, mat_name=f"M_{args.name}_PBR")
+        tex_dir = Path(args.out_dir) / "textures"
+        texture_paths = PBRBaker.generate_orm_and_normal_textures(str(tex_dir), args.name)
+    else:
+        palette_faces = PalettePainter.paint(asset_obj, args.name, args.archetype, args.seed)
+        print(f"[Palette] {args.name}: {palette_faces}")
 
     # 8. Headless Turntable Studio: 5 Diagnostic Passes
     rendered_passes = {}
@@ -173,6 +186,7 @@ def main():
         "glb_path": str(glb_path),
         "fbx_path": str(fbx_path),
         "textures": texture_paths,
+        "palette_faces": palette_faces,
         "diagnostic_renders": rendered_passes,
         "dimensions": [args.width, args.depth, args.height],
         "vertex_count": len(asset_obj.data.vertices),

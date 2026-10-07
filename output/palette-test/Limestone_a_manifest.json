@@ -1,0 +1,20 @@
+{
+  "asset_name": "Limestone_a",
+  "archetype": "natural_rock",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\palette-test\\Limestone_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\palette-test\\Limestone_a.fbx",
+  "textures": {},
+  "palette_faces": {
+    "limestone": 93,
+    "moss": 3
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "vertex_count": 98,
+  "polygon_count": 96
+}

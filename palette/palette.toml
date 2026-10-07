@@ -1,0 +1,129 @@
+# The game's entire colour set. Every face of every model samples one cell of the atlas built
+# from this file (tools/build_palette.py -> palette.png + palette.json). Change a colour here,
+# rebuild the assets, and the whole world follows.
+#
+# Two registers (orders/MANIFEST.md, "Style: two registers"):
+#   land        warm earth, low contrast, wide value spread per facet (soft, hand-made)
+#   settlement  narrower, more saturated, tight value spread, with dark trim (abrupt, deliberate)
+#
+# Each swatch becomes `shades` cells, darkest to lightest, spread by +/- `spread` in value.
+# Faces pick a shade with a bell-shaped weighting, so most faces sit near the base colour.
+
+[atlas]
+cell_px = 16
+cols = 8
+shades = 5
+
+[registers]
+land = { spread = 0.10 }
+settlement = { spread = 0.04 }
+
+# ---- land --------------------------------------------------------------------------------
+[swatch.limestone]
+register = "land"
+rgb = "#C9B99A"
+
+[swatch.granite]
+register = "land"
+rgb = "#8E8578"
+
+[swatch.sandstone]
+register = "land"
+rgb = "#D2A46A"
+
+[swatch.soil]
+register = "land"
+rgb = "#8B6B47"
+
+[swatch.moss]
+register = "land"
+rgb = "#7F8F4E"
+
+[swatch.leaf]
+register = "land"
+rgb = "#6F8F3F"
+
+[swatch.leaf_dry]
+register = "land"
+rgb = "#A58F3C"
+
+[swatch.bark]
+register = "land"
+rgb = "#6B4F35"
+
+[swatch.wood_pale]
+register = "land"
+rgb = "#C8A878"
+
+[swatch.berry]
+register = "land"
+rgb = "#B5433F"
+
+[swatch.ore_rock]
+register = "land"
+rgb = "#8A7F70"
+
+[swatch.ore_gold]
+register = "land"
+rgb = "#D1A43A"
+
+[swatch.ore_silver]
+register = "land"
+rgb = "#B9BEC4"
+
+[swatch.ore_steel]
+register = "land"
+rgb = "#6E7378"
+
+# ---- settlement --------------------------------------------------------------------------
+[swatch.timber_dark]
+register = "settlement"
+rgb = "#3E2A1A"
+
+[swatch.plank]
+register = "settlement"
+rgb = "#7A5230"
+
+[swatch.plaster]
+register = "settlement"
+rgb = "#E8DCC2"
+
+[swatch.daub]
+register = "settlement"
+rgb = "#B49A72"
+
+[swatch.wattle]
+register = "settlement"
+rgb = "#8C6E45"
+
+[swatch.thatch]
+register = "settlement"
+rgb = "#B7903F"
+
+[swatch.stone_wall]
+register = "settlement"
+rgb = "#6E6760"
+
+[swatch.roof_tile]
+register = "settlement"
+rgb = "#9C3F2B"
+
+[swatch.iron]
+register = "settlement"
+rgb = "#2C2C2E"
+
+[swatch.cloth]
+register = "settlement"
+rgb = "#8E3B4C"
+
+[swatch.hide]
+register = "settlement"
+rgb = "#9A7556"
+
+[swatch.glass]
+register = "settlement"
+rgb = "#3C4F5B"
+
+[swatch.copper]
+register = "settlement"
+rgb = "#B87333"

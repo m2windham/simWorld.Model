@@ -1,0 +1,26 @@
+{
+  "asset_name": "PalLimestone_a",
+  "archetype": "natural_rock",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\models\\PalLimestone_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\models\\PalLimestone_a.fbx",
+  "textures": {},
+  "palette_faces": {
+    "granite": 94,
+    "moss": 2
+  },
+  "diagnostic_renders": {
+    "beauty_045": "H:\\dev\\simWorld.Model\\output\\renders\\PalLimestone_a\\beauty_045.png",
+    "wireframe_clay_045": "H:\\dev\\simWorld.Model\\output\\renders\\PalLimestone_a\\wireframe_clay_045.png",
+    "normal_orientation": "H:\\dev\\simWorld.Model\\output\\renders\\PalLimestone_a\\normal_orientation.png",
+    "uv_checker_045": "H:\\dev\\simWorld.Model\\output\\renders\\PalLimestone_a\\uv_checker_045.png",
+    "ao_cavity_045": "H:\\dev\\simWorld.Model\\output\\renders\\PalLimestone_a\\ao_cavity_045.png"
+  },
+  "dimensions": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "vertex_count": 98,
+  "polygon_count": 96
+}

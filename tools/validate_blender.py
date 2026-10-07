@@ -212,7 +212,8 @@ def main() -> None:
     ]
     for job, status, new, ref in rows:
         lines.append(
-            f"| {job.name} | {job.archetype} | {status} | {vf(new)} | {vf(ref)} | {ext(new)} | {ext(ref)} |"
+            f"| {job.name} | {job.archetype} | {status} | {vf(new)} | {vf(ref)} |"
+            + f" {ext(new)} | {ext(ref)} |"
         )
     if errors:
         lines += ["", "## Errors", ""]
