@@ -99,7 +99,11 @@ def main() -> None:
         art = HOST_MODELS.parent.parent / "Art" / "Palette"
         art.mkdir(parents=True, exist_ok=True)
         shutil.copy2(ROOT / "palette" / "palette.png", art / "Palette.png")
-        shutil.copy2(ROOT / "palette" / "host.json", art / "palette.json")
+        # The host loads the JSON at runtime (Resources.Load<TextAsset>("Palette/palette")), so it
+        # must live under Resources; the PNG stays beside M_Palette.mat, which references it.
+        res = HOST_MODELS.parent / "Palette"
+        res.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(ROOT / "palette" / "host.json", res / "palette.json")
         print(f"  palette -> {art}")
 
     print(f"\n{len(jobs)} assets, {len(failed)} failed: {failed}")
