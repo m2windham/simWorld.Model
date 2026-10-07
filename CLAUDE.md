@@ -46,4 +46,4 @@ Blender is `H:\tools\Blender\blender.exe` (5.2 LTS; override with `BLENDER_PATH`
 
 1. Write `orders/<DefName>.toml`; pick or write a recipe.
 2. `swm build`, then `swm snapshot` with a Host reference and look at the PNG before judging it done.
-3. `swm deliver`; stage in the Host but do not commit without Doug.
+3. Deliver (`tools/regenerate_all.py --only <archetype>` or `swm deliver`), then **refresh the Editor before committing** (`unity command eval 'UnityEditor.AssetDatabase.Refresh(); return "ok";'`, only when the Editor is free) so every new asset's `.meta` exists and travels with it; commit FBX + metas + the two palette files only, never Host scripts or settings. Tell the Host session the commit hash. Authoring contract: centred on the unrotated footprint, base at z = 0, 1 unit per cell, front/head toward Blender +Y (= Unity -Z, measured).
