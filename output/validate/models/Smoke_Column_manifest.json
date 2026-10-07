@@ -1,0 +1,20 @@
+{
+  "asset_name": "Smoke_Column",
+  "archetype": "modular_column",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_Column.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_Column.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_Column_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_Column_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_Column_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.3,
+    0.3,
+    1.0
+  ],
+  "vertex_count": 32,
+  "polygon_count": 17
+}

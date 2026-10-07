@@ -1,0 +1,20 @@
+{
+  "asset_name": "Smoke_PlantBerry",
+  "archetype": "plant_berry",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_PlantBerry.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_PlantBerry.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_PlantBerry_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_PlantBerry_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_PlantBerry_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.6,
+    0.6,
+    0.5
+  ],
+  "vertex_count": 134,
+  "polygon_count": 218
+}

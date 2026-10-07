@@ -1,0 +1,20 @@
+{
+  "asset_name": "Smoke_Wall",
+  "archetype": "modular_wall",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_Wall.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_Wall.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_Wall_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_Wall_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_Wall_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    1.0,
+    0.2,
+    1.0
+  ],
+  "vertex_count": 8,
+  "polygon_count": 4
+}

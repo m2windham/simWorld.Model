@@ -1,0 +1,20 @@
+{
+  "asset_name": "WoodLog_b",
+  "archetype": "wood_log",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\WoodLog_b.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\WoodLog_b.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\WoodLog_b_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\WoodLog_b_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\WoodLog_b_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.9,
+    0.35,
+    0.35
+  ],
+  "vertex_count": 18,
+  "polygon_count": 32
+}

@@ -31,7 +31,7 @@ uv run swm deliver CollapsedRocks          # copy into Host/Assets/Resources/Mod
 uv run swm preview CollapsedRocks          # open variants in interactive Blender
 ```
 
-Blender is `H:\tools\Blender\blender.exe` (override with `BLENDER_PATH`). For interactive recipe work use the `blender` / `blender-lab` MCP servers with Blender 5.2 open.
+Blender is `H:\tools\Blender\blender.exe` (5.2 LTS; override with `BLENDER_PATH`). The pipeline was built on 4.5 but validated on 5.2 on 2026-10-06 (`tools/validate_blender.py`: 42 of 47 shipped assets regenerate vertex-identical). 4.5 is not installed. For interactive recipe work use the `blender` / `blender-lab` MCP servers with Blender 5.2 open.
 
 ## The Host contract (do not break)
 

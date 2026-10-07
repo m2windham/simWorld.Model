@@ -59,7 +59,7 @@ class PropCylinderGenerator(PropBaseGenerator):
         bpy.context.collection.objects.link(obj)
 
         bm = bmesh.new()
-        bmesh.ops.create_cylinder(
+        bmesh.ops.create_cone(  # bmesh has no create_cylinder; a cone with equal radii is one
             bm,
             cap_ends=True,
             cap_tris=False,

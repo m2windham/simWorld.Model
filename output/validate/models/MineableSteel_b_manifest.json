@@ -1,0 +1,20 @@
+{
+  "asset_name": "MineableSteel_b",
+  "archetype": "mineable_steel",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\MineableSteel_b.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\MineableSteel_b.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\MineableSteel_b_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\MineableSteel_b_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\MineableSteel_b_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.8,
+    0.8,
+    0.55
+  ],
+  "vertex_count": 64,
+  "polygon_count": 128
+}

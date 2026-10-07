@@ -1,0 +1,20 @@
+{
+  "asset_name": "Smoke_MedievalHome",
+  "archetype": "prop_medieval_home",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_MedievalHome.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_MedievalHome.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_MedievalHome_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_MedievalHome_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_MedievalHome_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    4.0,
+    5.0,
+    3.8
+  ],
+  "vertex_count": 1601,
+  "polygon_count": 950
+}

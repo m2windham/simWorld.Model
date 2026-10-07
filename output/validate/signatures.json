@@ -1,0 +1,24 @@
+{
+  "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_Cylinder.fbx": {
+    "vertices": 192,
+    "faces": 220,
+    "extents": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "volume": 0.7803,
+    "hash": "a1279aef31a7"
+  },
+  "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_Column.fbx": {
+    "vertices": 72,
+    "faces": 74,
+    "extents": [
+      0.4,
+      0.4,
+      1.0
+    ],
+    "volume": 0.2824,
+    "hash": "dbdb406ba495"
+  }
+}

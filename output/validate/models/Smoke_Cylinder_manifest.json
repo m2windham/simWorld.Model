@@ -1,0 +1,20 @@
+{
+  "asset_name": "Smoke_Cylinder",
+  "archetype": "prop_cylinder",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_Cylinder.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Smoke_Cylinder.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_Cylinder_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_Cylinder_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Smoke_Cylinder_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "vertex_count": 64,
+  "polygon_count": 34
+}

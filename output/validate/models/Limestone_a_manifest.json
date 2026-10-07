@@ -1,0 +1,20 @@
+{
+  "asset_name": "Limestone_a",
+  "archetype": "natural_rock",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Limestone_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Limestone_a.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Limestone_a_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Limestone_a_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Limestone_a_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "vertex_count": 98,
+  "polygon_count": 96
+}

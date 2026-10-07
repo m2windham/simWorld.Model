@@ -1,0 +1,20 @@
+{
+  "asset_name": "Plant_TreePoplar_c",
+  "archetype": "tree_poplar",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Plant_TreePoplar_c.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Plant_TreePoplar_c.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Plant_TreePoplar_c_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Plant_TreePoplar_c_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Plant_TreePoplar_c_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.8,
+    0.8,
+    3.0
+  ],
+  "vertex_count": 78,
+  "polygon_count": 124
+}

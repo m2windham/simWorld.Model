@@ -1,0 +1,20 @@
+{
+  "asset_name": "House_Neo_d",
+  "archetype": "neo_home_d",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\House_Neo_d.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\House_Neo_d.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\House_Neo_d_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\House_Neo_d_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\House_Neo_d_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    4.0,
+    5.0,
+    3.7
+  ],
+  "vertex_count": 110,
+  "polygon_count": 83
+}

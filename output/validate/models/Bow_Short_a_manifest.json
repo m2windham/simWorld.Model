@@ -1,0 +1,20 @@
+{
+  "asset_name": "Bow_Short_a",
+  "archetype": "bow_short",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Bow_Short_a.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\Bow_Short_a.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Bow_Short_a_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Bow_Short_a_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\Bow_Short_a_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.1,
+    0.05,
+    0.9
+  ],
+  "vertex_count": 32,
+  "polygon_count": 38
+}

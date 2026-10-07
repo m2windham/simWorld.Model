@@ -1,0 +1,20 @@
+{
+  "asset_name": "ChunkGranite_d",
+  "archetype": "chunk_granite",
+  "compute_mode": "HIP_GPU",
+  "glb_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\ChunkGranite_d.glb",
+  "fbx_path": "H:\\dev\\simWorld.Model\\output\\validate\\models\\ChunkGranite_d.fbx",
+  "textures": {
+    "orm": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\ChunkGranite_d_ORM.png",
+    "normal_gl": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\ChunkGranite_d_Normal_GL.png",
+    "normal_dx": "H:\\dev\\simWorld.Model\\output\\validate\\models\\textures\\ChunkGranite_d_Normal_DX.png"
+  },
+  "diagnostic_renders": {},
+  "dimensions": [
+    0.5,
+    0.5,
+    0.4
+  ],
+  "vertex_count": 142,
+  "polygon_count": 251
+}
