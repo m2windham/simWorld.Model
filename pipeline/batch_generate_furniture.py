@@ -12,7 +12,7 @@ from pipeline.bridge import BlenderExecutionBridge
 HOST_MODELS = project_root.parent / "simWorld.Host" / "Assets" / "Resources" / "Models"
 
 VARIANTS = [
-    ("bed_simple", "Bed", 1.0, 1.0, 0.4, 401),
+    ("bed_simple", "Bed", 1.0, 2.0, 0.4, 401),  # core Bed is 1x2 (simWorld#88); head at +Y
 ]
 
 

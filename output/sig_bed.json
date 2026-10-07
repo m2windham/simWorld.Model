@@ -1,0 +1,35 @@
+{
+  "output\\models\\Bed.fbx": {
+    "vertices": 168,
+    "faces": 162,
+    "extents": [
+      0.9,
+      1.8,
+      0.33
+    ],
+    "volume": 0.4153,
+    "hash": "230eff785019"
+  },
+  "output\\models\\Blueprint_Bed_a.fbx": {
+    "vertices": 96,
+    "faces": 72,
+    "extents": [
+      0.93,
+      1.83,
+      0.33
+    ],
+    "volume": 0.0109,
+    "hash": "b46dd3860ba5"
+  },
+  "output\\models\\Frame_Bed_a.fbx": {
+    "vertices": 88,
+    "faces": 66,
+    "extents": [
+      0.9,
+      1.8,
+      0.24
+    ],
+    "volume": 0.024,
+    "hash": "4f5edd67e42d"
+  }
+}
